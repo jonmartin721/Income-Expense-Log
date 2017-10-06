@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D78223121F83E19400E35298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78223111F83E19400E35298 /* AppDelegate.swift */; };
+		D78223171F83E19400E35298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78223151F83E19400E35298 /* Main.storyboard */; };
+		D78223191F83E19400E35298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78223181F83E19400E35298 /* Assets.xcassets */; };
+		D782231C1F83E19400E35298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D782231A1F83E19400E35298 /* LaunchScreen.storyboard */; };
+		D78223271F83E19400E35298 /* Income_Expense_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78223261F83E19400E35298 /* Income_Expense_LogTests.swift */; };
+		D78223321F83E19400E35298 /* Income_Expense_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78223311F83E19400E35298 /* Income_Expense_LogUITests.swift */; };
+		D78223401F83E1EF00E35298 /* SLVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782233F1F83E1EF00E35298 /* SLVViewController.swift */; };
+		D78223421F83E1FD00E35298 /* ELVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78223411F83E1FD00E35298 /* ELVViewController.swift */; };
+		D78223461F83E28900E35298 /* NetSalaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78223451F83E28900E35298 /* NetSalaryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D78223231F83E19400E35298 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78223061F83E19400E35298 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D782230D1F83E19400E35298;
+			remoteInfo = "Income-Expense Log";
+		};
+		D782232E1F83E19400E35298 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78223061F83E19400E35298 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D782230D1F83E19400E35298;
+			remoteInfo = "Income-Expense Log";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D782230E1F83E19400E35298 /* Income-Expense Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Income-Expense Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78223111F83E19400E35298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D78223161F83E19400E35298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D78223181F83E19400E35298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D782231B1F83E19400E35298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D782231D1F83E19400E35298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78223221F83E19400E35298 /* Income-Expense LogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Income-Expense LogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78223261F83E19400E35298 /* Income_Expense_LogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income_Expense_LogTests.swift; sourceTree = "<group>"; };
+		D78223281F83E19400E35298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D782232D1F83E19400E35298 /* Income-Expense LogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Income-Expense LogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78223311F83E19400E35298 /* Income_Expense_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income_Expense_LogUITests.swift; sourceTree = "<group>"; };
+		D78223331F83E19400E35298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D782233F1F83E1EF00E35298 /* SLVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLVViewController.swift; sourceTree = "<group>"; };
+		D78223411F83E1FD00E35298 /* ELVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELVViewController.swift; sourceTree = "<group>"; };
+		D78223451F83E28900E35298 /* NetSalaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSalaryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D782230B1F83E19400E35298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D782231F1F83E19400E35298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D782232A1F83E19400E35298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D78223051F83E19400E35298 = {
+			isa = PBXGroup;
+			children = (
+				D78223101F83E19400E35298 /* Income-Expense Log */,
+				D78223251F83E19400E35298 /* Income-Expense LogTests */,
+				D78223301F83E19400E35298 /* Income-Expense LogUITests */,
+				D782230F1F83E19400E35298 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D782230F1F83E19400E35298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D782230E1F83E19400E35298 /* Income-Expense Log.app */,
+				D78223221F83E19400E35298 /* Income-Expense LogTests.xctest */,
+				D782232D1F83E19400E35298 /* Income-Expense LogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D78223101F83E19400E35298 /* Income-Expense Log */ = {
+			isa = PBXGroup;
+			children = (
+				D782233F1F83E1EF00E35298 /* SLVViewController.swift */,
+				D78223411F83E1FD00E35298 /* ELVViewController.swift */,
+				D78223451F83E28900E35298 /* NetSalaryViewController.swift */,
+				D78223111F83E19400E35298 /* AppDelegate.swift */,
+				D78223151F83E19400E35298 /* Main.storyboard */,
+				D78223181F83E19400E35298 /* Assets.xcassets */,
+				D782231A1F83E19400E35298 /* LaunchScreen.storyboard */,
+				D782231D1F83E19400E35298 /* Info.plist */,
+			);
+			path = "Income-Expense Log";
+			sourceTree = "<group>";
+		};
+		D78223251F83E19400E35298 /* Income-Expense LogTests */ = {
+			isa = PBXGroup;
+			children = (
+				D78223261F83E19400E35298 /* Income_Expense_LogTests.swift */,
+				D78223281F83E19400E35298 /* Info.plist */,
+			);
+			path = "Income-Expense LogTests";
+			sourceTree = "<group>";
+		};
+		D78223301F83E19400E35298 /* Income-Expense LogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D78223311F83E19400E35298 /* Income_Expense_LogUITests.swift */,
+				D78223331F83E19400E35298 /* Info.plist */,
+			);
+			path = "Income-Expense LogUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D782230D1F83E19400E35298 /* Income-Expense Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78223361F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense Log" */;
+			buildPhases = (
+				D782230A1F83E19400E35298 /* Sources */,
+				D782230B1F83E19400E35298 /* Frameworks */,
+				D782230C1F83E19400E35298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Income-Expense Log";
+			productName = "Income-Expense Log";
+			productReference = D782230E1F83E19400E35298 /* Income-Expense Log.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D78223211F83E19400E35298 /* Income-Expense LogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78223391F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense LogTests" */;
+			buildPhases = (
+				D782231E1F83E19400E35298 /* Sources */,
+				D782231F1F83E19400E35298 /* Frameworks */,
+				D78223201F83E19400E35298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78223241F83E19400E35298 /* PBXTargetDependency */,
+			);
+			name = "Income-Expense LogTests";
+			productName = "Income-Expense LogTests";
+			productReference = D78223221F83E19400E35298 /* Income-Expense LogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D782232C1F83E19400E35298 /* Income-Expense LogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D782233C1F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense LogUITests" */;
+			buildPhases = (
+				D78223291F83E19400E35298 /* Sources */,
+				D782232A1F83E19400E35298 /* Frameworks */,
+				D782232B1F83E19400E35298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D782232F1F83E19400E35298 /* PBXTargetDependency */,
+			);
+			name = "Income-Expense LogUITests";
+			productName = "Income-Expense LogUITests";
+			productReference = D782232D1F83E19400E35298 /* Income-Expense LogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D78223061F83E19400E35298 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = JonathanMartin;
+				TargetAttributes = {
+					D782230D1F83E19400E35298 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					D78223211F83E19400E35298 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D782230D1F83E19400E35298;
+					};
+					D782232C1F83E19400E35298 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D782230D1F83E19400E35298;
+					};
+				};
+			};
+			buildConfigurationList = D78223091F83E19400E35298 /* Build configuration list for PBXProject "Income-Expense Log" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D78223051F83E19400E35298;
+			productRefGroup = D782230F1F83E19400E35298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D782230D1F83E19400E35298 /* Income-Expense Log */,
+				D78223211F83E19400E35298 /* Income-Expense LogTests */,
+				D782232C1F83E19400E35298 /* Income-Expense LogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D782230C1F83E19400E35298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D782231C1F83E19400E35298 /* LaunchScreen.storyboard in Resources */,
+				D78223191F83E19400E35298 /* Assets.xcassets in Resources */,
+				D78223171F83E19400E35298 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78223201F83E19400E35298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D782232B1F83E19400E35298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D782230A1F83E19400E35298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78223421F83E1FD00E35298 /* ELVViewController.swift in Sources */,
+				D78223401F83E1EF00E35298 /* SLVViewController.swift in Sources */,
+				D78223461F83E28900E35298 /* NetSalaryViewController.swift in Sources */,
+				D78223121F83E19400E35298 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D782231E1F83E19400E35298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78223271F83E19400E35298 /* Income_Expense_LogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78223291F83E19400E35298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78223321F83E19400E35298 /* Income_Expense_LogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D78223241F83E19400E35298 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D782230D1F83E19400E35298 /* Income-Expense Log */;
+			targetProxy = D78223231F83E19400E35298 /* PBXContainerItemProxy */;
+		};
+		D782232F1F83E19400E35298 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D782230D1F83E19400E35298 /* Income-Expense Log */;
+			targetProxy = D782232E1F83E19400E35298 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D78223151F83E19400E35298 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D78223161F83E19400E35298 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D782231A1F83E19400E35298 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D782231B1F83E19400E35298 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D78223341F83E19400E35298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D78223351F83E19400E35298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78223371F83E19400E35298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense Log/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-Log";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D78223381F83E19400E35298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense Log/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-Log";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D782233A1F83E19400E35298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense LogTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-LogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Income-Expense Log.app/Income-Expense Log";
+			};
+			name = Debug;
+		};
+		D782233B1F83E19400E35298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense LogTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-LogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Income-Expense Log.app/Income-Expense Log";
+			};
+			name = Release;
+		};
+		D782233D1F83E19400E35298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense LogUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-LogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Income-Expense Log";
+			};
+			name = Debug;
+		};
+		D782233E1F83E19400E35298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Income-Expense LogUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanMartin.Income-Expense-LogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Income-Expense Log";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D78223091F83E19400E35298 /* Build configuration list for PBXProject "Income-Expense Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78223341F83E19400E35298 /* Debug */,
+				D78223351F83E19400E35298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78223361F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78223371F83E19400E35298 /* Debug */,
+				D78223381F83E19400E35298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78223391F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense LogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D782233A1F83E19400E35298 /* Debug */,
+				D782233B1F83E19400E35298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D782233C1F83E19400E35298 /* Build configuration list for PBXNativeTarget "Income-Expense LogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D782233D1F83E19400E35298 /* Debug */,
+				D782233E1F83E19400E35298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D78223061F83E19400E35298 /* Project object */;
+}

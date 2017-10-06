@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wu-R4-Oij">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Salary Log-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SLVViewController" customModule="Income_Expense_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-rh-U2K">
+                                <rect key="frame" x="114" y="40" width="147" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-nq-slF">
+                                <rect key="frame" x="200" y="173" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="V7L-er-xyO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="We1-dO-Nar"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXM-SG-Uc9">
+                                <rect key="frame" x="50" y="176" width="120" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Salary ($):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLK-t5-EzT">
+                                <rect key="frame" x="119" y="334" width="136" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHc-Ux-Ceg">
+                                <rect key="frame" x="135" y="238" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add Income"/>
+                                <connections>
+                                    <action selector="addIncomeClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmY-cx-B6V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25r-9C-jfX">
+                                <rect key="frame" x="163.5" y="383" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="25r-9C-jfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Se-gf-gyo"/>
+                            <constraint firstItem="H2N-nq-slF" firstAttribute="leading" secondItem="FXM-SG-Uc9" secondAttribute="trailing" constant="30" id="6mT-DO-WZ0"/>
+                            <constraint firstItem="GLK-t5-EzT" firstAttribute="top" secondItem="mHc-Ux-Ceg" secondAttribute="bottom" constant="60" id="Fnd-aD-9Hr"/>
+                            <constraint firstItem="H2N-nq-slF" firstAttribute="centerY" secondItem="FXM-SG-Uc9" secondAttribute="centerY" id="LXS-pd-qG6"/>
+                            <constraint firstItem="mHc-Ux-Ceg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LwD-Mb-Hgo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XNL-rh-U2K" secondAttribute="trailing" id="PcZ-d1-bGr"/>
+                            <constraint firstItem="FXM-SG-Uc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Q2G-Vp-WY8"/>
+                            <constraint firstItem="GLK-t5-EzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q7k-jM-w65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GLK-t5-EzT" secondAttribute="trailing" id="VrV-ug-BJp"/>
+                            <constraint firstItem="XNL-rh-U2K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gnF-F3-dMK"/>
+                            <constraint firstItem="H2N-nq-slF" firstAttribute="leading" secondItem="FXM-SG-Uc9" secondAttribute="trailing" constant="30" id="h2l-9d-8Uy"/>
+                            <constraint firstItem="FXM-SG-Uc9" firstAttribute="top" secondItem="XNL-rh-U2K" secondAttribute="bottom" constant="100" id="nlf-b7-r2I"/>
+                            <constraint firstItem="25r-9C-jfX" firstAttribute="top" secondItem="GLK-t5-EzT" secondAttribute="bottom" constant="25" id="oul-ZI-UHa"/>
+                            <constraint firstItem="XNL-rh-U2K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXD-As-0Fj"/>
+                            <constraint firstItem="mHc-Ux-Ceg" firstAttribute="top" secondItem="H2N-nq-slF" secondAttribute="bottom" constant="35" id="s7u-r3-7Yq"/>
+                            <constraint firstItem="XNL-rh-U2K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sW1-tr-aqu"/>
+                            <constraint firstItem="GLK-t5-EzT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y7r-Fc-2eX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Salary Log" id="e7J-k6-2Bf"/>
+                    <connections>
+                        <outlet property="incomeTextField" destination="H2N-nq-slF" id="2sP-N5-du2"/>
+                        <outlet property="totalSalaryLabel" destination="25r-9C-jfX" id="umj-C4-uhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Expense Log-->
+        <scene sceneID="RMF-sd-0eq">
+            <objects>
+                <viewController id="Ojb-GN-Ivr" customClass="ELVViewController" customModule="Income_Expense_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNW-w0-GVh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRA-8S-b6G">
+                                <rect key="frame" x="99" y="40" width="178" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffM-zb-tFd">
+                                <rect key="frame" x="130" y="238" width="115" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add Expense"/>
+                                <connections>
+                                    <action selector="addExpenseClicked" destination="Ojb-GN-Ivr" eventType="touchUpInside" id="5HX-ol-8zJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Expense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-Xh-rxq">
+                                <rect key="frame" x="50" y="176" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q9y-SG-WKb">
+                                <rect key="frame" x="210" y="173" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="s5f-uD-JEF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ojb-GN-Ivr" id="1Do-wq-ckx"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Expenses ($):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-8A-4gL">
+                                <rect key="frame" x="105" y="334" width="166" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1i-I7-22D">
+                                <rect key="frame" x="164" y="383" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hIT-Xh-rxq" firstAttribute="top" secondItem="VRA-8S-b6G" secondAttribute="bottom" constant="100" id="19v-z8-8T5"/>
+                            <constraint firstItem="RpO-gk-tqx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VRA-8S-b6G" secondAttribute="trailing" id="4xD-eW-nie"/>
+                            <constraint firstItem="y1i-I7-22D" firstAttribute="top" secondItem="KLr-8A-4gL" secondAttribute="bottom" constant="25" id="5lA-0e-Ir0"/>
+                            <constraint firstItem="KLr-8A-4gL" firstAttribute="centerX" secondItem="FNW-w0-GVh" secondAttribute="centerX" id="9fW-Uj-ELO"/>
+                            <constraint firstItem="VRA-8S-b6G" firstAttribute="centerX" secondItem="FNW-w0-GVh" secondAttribute="centerX" id="FfD-dd-Uqj"/>
+                            <constraint firstItem="ffM-zb-tFd" firstAttribute="centerX" secondItem="FNW-w0-GVh" secondAttribute="centerX" id="Gvk-gM-dEg"/>
+                            <constraint firstItem="ffM-zb-tFd" firstAttribute="top" secondItem="Q9y-SG-WKb" secondAttribute="bottom" constant="35" id="J4C-Y9-yOG"/>
+                            <constraint firstItem="Q9y-SG-WKb" firstAttribute="leading" secondItem="hIT-Xh-rxq" secondAttribute="trailing" constant="30" id="KyC-oP-Ak5"/>
+                            <constraint firstItem="y1i-I7-22D" firstAttribute="centerX" secondItem="FNW-w0-GVh" secondAttribute="centerX" id="OS1-IN-UwP"/>
+                            <constraint firstItem="KLr-8A-4gL" firstAttribute="top" secondItem="ffM-zb-tFd" secondAttribute="bottom" constant="60" id="THm-3c-3Eo"/>
+                            <constraint firstItem="hIT-Xh-rxq" firstAttribute="leading" secondItem="RpO-gk-tqx" secondAttribute="leading" constant="50" id="TlS-nd-HOu"/>
+                            <constraint firstItem="VRA-8S-b6G" firstAttribute="top" secondItem="RpO-gk-tqx" secondAttribute="top" constant="20" id="Y4S-uX-549"/>
+                            <constraint firstItem="VRA-8S-b6G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RpO-gk-tqx" secondAttribute="leading" id="c4S-li-kjV"/>
+                            <constraint firstItem="Q9y-SG-WKb" firstAttribute="centerY" secondItem="hIT-Xh-rxq" secondAttribute="centerY" id="z6Q-Mr-O9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RpO-gk-tqx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expense Log" id="OJJ-EB-9Ln"/>
+                    <connections>
+                        <outlet property="expenseTextField" destination="Q9y-SG-WKb" id="cdo-3r-N9E"/>
+                        <outlet property="totalExpenseLabel" destination="y1i-I7-22D" id="9FD-Cg-El3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zut-vE-waQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="115.59220389805098"/>
+        </scene>
+        <!--Net Salary-->
+        <scene sceneID="nsU-vw-JpJ">
+            <objects>
+                <viewController id="bqy-Ma-qam" customClass="NetSalaryViewController" customModule="Income_Expense_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xLK-o2-J2D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-b7-QTO">
+                                <rect key="frame" x="115" y="40" width="145" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Salary ($):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-qz-vhB">
+                                <rect key="frame" x="124.5" y="176" width="126" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD1-Hj-PFp">
+                                <rect key="frame" x="163.5" y="235" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ViY-b7-QTO" firstAttribute="top" secondItem="1nl-dj-2XA" secondAttribute="top" constant="20" id="6Mz-my-tUQ"/>
+                            <constraint firstItem="Kt1-qz-vhB" firstAttribute="top" secondItem="ViY-b7-QTO" secondAttribute="bottom" constant="100" id="TQ7-dj-ggF"/>
+                            <constraint firstItem="Kt1-qz-vhB" firstAttribute="centerX" secondItem="eD1-Hj-PFp" secondAttribute="centerX" id="XvT-WS-Ubf"/>
+                            <constraint firstItem="ViY-b7-QTO" firstAttribute="centerX" secondItem="xLK-o2-J2D" secondAttribute="centerX" id="ZLK-Og-kGf"/>
+                            <constraint firstItem="eD1-Hj-PFp" firstAttribute="top" secondItem="Kt1-qz-vhB" secondAttribute="bottom" constant="35" id="ebJ-1Y-g8z"/>
+                            <constraint firstItem="Kt1-qz-vhB" firstAttribute="centerX" secondItem="xLK-o2-J2D" secondAttribute="centerX" id="icp-gx-8MQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1nl-dj-2XA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Net Salary" id="xcz-jZ-Pmb"/>
+                    <connections>
+                        <outlet property="netSalaryLabel" destination="eD1-Hj-PFp" id="d86-pe-Zlf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEF-ch-4wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="115.59220389805098"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jMI-zh-Rzj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8wu-R4-Oij" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OYn-Gy-Mid">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="plI-r9-Sbr"/>
+                        <segue destination="Ojb-GN-Ivr" kind="relationship" relationship="viewControllers" id="Yp8-me-TtA"/>
+                        <segue destination="bqy-Ma-qam" kind="relationship" relationship="viewControllers" id="115-3E-G19"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3u-dS-Xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-877"/>
+        </scene>
+    </scenes>
+</document>
